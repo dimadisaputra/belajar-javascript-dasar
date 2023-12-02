@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        let arrayKosong = []
+        let arrayNama = ["Dimas", "Adi", "Saputra"]
+
+        const names = [];
+        names.push("Dimas");
+        names.push("Adi", "Saputra");
+        names.push("Kiki", "Ahmad", "Rusdi");
+
+        console.table(names)
+
+        // Mengakses Array
+        console.info(names[0]);
+        console.info(names[1]);
+        console.info(names[2]);
+
+        // Mengganti value Array
+        names[0] = "Evan";
+
+        console.table(names)
+
+        delete names[3];
+
+        console.table(names);
+    </script>
+</body>
+</html>

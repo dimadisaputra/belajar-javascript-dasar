@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe Data <Object></Object></title>
+</head>
+<body>
+    <script>
+
+        const person = {};
+
+        // Changes Attributes
+        person["name"] = "Dimas Adi Saputra";
+        person["address"] = "Indonesia";
+        person["age"] = 20;
+
+        console.table(person);
+
+        delete person["age"];
+
+        console.table(person);
+
+        const orang = {
+            nama: "Dimas Adi Saputra",
+            alamat: "Indonesia",
+            umur: 20,
+            "sudah menikah": false
+        };
+
+        console.info(`Nama: ${orang.nama}`);
+        console.info(`Alamat: ${orang.alamat}`);
+        console.info(`Umur: ${orang.umur}`);
+        console.info(`Sudah Menikah: ${orang["sudah menikah"]}`)
+
+        console.table(orang);
+
+    </script>
+</body>
+</html>

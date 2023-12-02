@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Anonymous</title>
+</head>
+<body>
+    <script>
+
+        const sayName = function(name){
+            console.info(`Hello ${name}`);
+        }
+
+        sayName("Dimas");
+        sayName("Dian");
+
+        function giveMeName(callback){
+            callback("Dimas");
+        }
+
+        giveMeName(sayName);
+
+        giveMeName(function(name){
+            console.info(name);
+        });
+
+    </script>
+</body>
+</html>
